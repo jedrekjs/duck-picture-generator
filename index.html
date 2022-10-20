@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Quack!</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='loader.css'>
     <script defer src='App.js'></script>
 </head>
+
 <body>
     <header>
         <h1>RANDOM DUCK GENERATOR</h1>
     </header>
     <main>
         <div class="content-wrapper">
-            <img id="duck-img" src="">
-            <button onclick="changeImg()">GENERATE THE DUCK</button>
+            <div class="img-container">
+                <img id="duck-img" src="">
+                <div id="loader-container">
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <button id="toggle-button" onclick="changeImg()">GENERATE THE DUCK</button>
         </div>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

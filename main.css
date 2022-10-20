@@ -11,9 +11,6 @@ header{
     font-weight: 600;
     color: white;
     font-stretch: narrower;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     background-color: rgb(127, 197, 48);
     width: 100%;
     box-shadow: inset 1px -27px 31px -14px rgb(153, 248, 97);
@@ -37,11 +34,25 @@ main{
     flex-direction: column;
 }
 
-img{
+.img-container{
     width: auto;
-    height: auto;
-    max-height: 600px;
+    height: 20rem;
+    position: relative;
     margin-bottom: 20px;
+    align-items: center;
+}
+
+img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
 }
 
 button{
